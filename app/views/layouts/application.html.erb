@@ -5,11 +5,24 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%=stylesheet_pack_tag'application',media:'all','dataturbolinkstrack':'reload'%>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class = "container">
+
+  <%if notice.present?%>
+  <aside class = "alertalertinfo">
+  <%=notice%>
+  </aside>
+  <%end%>
+
+  <%if alert.present?%>
+    <asid eclass="alertalertdanger">
+  <%=alert%>
+  </aside>
+  <%end%>
+  
     <%= yield %>
   </body>
 </html>
