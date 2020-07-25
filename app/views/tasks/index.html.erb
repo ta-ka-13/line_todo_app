@@ -1,16 +1,13 @@
-<h1>Tasks#index</h1>
+<table>
+<thead>
+<tr><th>タスク</th></tr>
 
-
-<%# <div>
-<% @tasks.each do |task| %>
-
-<%# <a> <%= task.task %> </a>
-
-
-<%# <tbody> %>
-<%# <% @tasks.each do|task|%>
-<%# <tr> %>
-<%# <td><%=task.task%></td>
-<%# </tr><%end%> 
-<%# </tbody> %>
-
+</thead>
+<tbody>
+<%@tasks.each do|task|%>
+<tr>
+<td><%=task.task%></td>
+</tr>
+<%end%>
+</tbody>
+</table>
