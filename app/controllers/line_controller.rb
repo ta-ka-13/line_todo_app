@@ -1,6 +1,6 @@
 require 'line/bot'
   class LineController < ApplicationController
-    protect_from_forgery:except=>[:bot]
+    protect_from_forgery :except => [:bot]
 
     def bot
       body = request.body.read
@@ -14,7 +14,7 @@ require 'line/bot'
 
     task = event[‘message’][‘text’]
     begin
-      Task.create!(task:task)
+      Task.create!(task: task)
 
       message = {type:'text',text:"タスク『#{task}』を登録しました！"}
       client.reply_message(event['replyToken'],replyToken'],message)
@@ -24,15 +24,15 @@ require 'line/bot'
     end
   end
   end
-    }
-    head:ok
+}
+    head :ok
   end
 
+
 private
+
   def client
-    @client || = Line::Bot::Client.new {|config| config.channel_secret=ENV["LINE_CHANNEL_SECRET"]
-
-      config.channel_token = ENV["LINE_CHANNEL_TOKEN"]}
+    @client || = Line::Bot::Client.new 
+    {|config| config.channel_secret = ENV["LINE_CHANNEL_SECRET"] config.channel_token = ENV["LINE_CHANNEL_TOKEN"]}
     end
-
-end
+  end
