@@ -4,20 +4,22 @@ class TasksController < ApplicationController
   end
 
   def edit
-    @task=Task.find(params[:id])
+    @task = Task.find(params[:id])
   end
 
+
+
   def update
-    task=Task.find(params[:id])
-    task.task=params[:task]
+    task = Task.find(params[:id])
+    task.task = params[:task]
     if task.save
-      redirect_totasks_index_path,
-        notice:"タスクを１件更新しました"
-      else
-        redirect_totasks_index_path,
-          alert:"タスクの更新に失敗しました"
-        end
-      end
+      redirect_to tasks_index_path,
+        notice: "タスクを１件更新しました"
+    else
+      redirect_to tasks_index_path,
+        alert: "タスクの更新に失敗しました"
+    end
+  end
 
   def delete
     task = Task.find(params[:id])
@@ -30,16 +32,8 @@ class TasksController < ApplicationController
     end
   end
 
-  private
-
-  def task_params
-    
-    params.permit(:text)
-
-    
-    
-  end
-
-
-
+  # private
+  # def task_params
+  #   params.permit(:task)
+  # end
 end
