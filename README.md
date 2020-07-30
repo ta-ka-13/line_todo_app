@@ -1,7 +1,7 @@
 # README
 
 # 名前:application name
-## Line todoapp
+## Line Todo App
 
 # 概要:overview
 
