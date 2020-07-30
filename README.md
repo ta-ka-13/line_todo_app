@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 名前:application name
+## Line todoapp
 
-Things you may want to cover:
+# 概要:overview
 
-* Ruby version
+# スクリーンショット:screenshot
 
-* System dependencies
+# gif
 
-* Configuration
+# 本番環境:production environment
 
-* Database creation
+# 目的:purpose
 
-* Database initialization
+# 工夫したポイント:devised
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+# 使用技術:application technology
+#### Ruby on Rails(6.0.0)Font-Awesome-Rails,Heroku,GitHub
 
-* Deployment instructions
+# 課題:issues in the future
 
-* ...
+
+# 実装予定の機能:implementation plan
+
+
+# アプリケーションリンク先:application link
+
