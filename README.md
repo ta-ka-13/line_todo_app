@@ -17,7 +17,7 @@
 
 
 # 使用技術:application technology
-#### Ruby on Rails(6.0.0)Font-Awesome-Rails,Heroku,GitHub
+#### Ruby on Rails(6.0.3.2)Font-Awesome-Rails,Heroku,GitHub
 
 # 課題:issues in the future
 
