@@ -42,6 +42,10 @@ production:
   # username: line_todo_app
   # password: <%= ENV['LINE_TODO_APP_DATABASE_PASSWORD'] %>
 
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
   host:<%=ENV['DB_HOSTNAME']%>
   database:<%=ENV['DB_NAME']%>
   username:<%=ENV['DB_USERNAME']%>
