@@ -42,7 +42,7 @@ production:
   encoding: unicode
   pool: 5
 
-  host:<%=ENV['DB_HOSTNAME']%>
-  database:<%=ENV['DB_NAME']%>
-  username:<%=ENV['DB_USERNAME']%>
-  password:<%=ENV['DB_PASSWORD']%>
+  # host:<%=ENV['DB_HOSTNAME']%>
+  # database:<%=ENV['DB_NAME']%>
+  # username:<%=ENV['DB_USERNAME']%>
+  # password:<%=ENV['DB_PASSWORD']%>
