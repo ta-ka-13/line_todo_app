@@ -23,7 +23,7 @@ require 'line/bot'
       client.reply_message(event['replyToken'],message)
     end
   end
-  end
+end
 
     head :ok
   end
