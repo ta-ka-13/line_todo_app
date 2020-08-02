@@ -16,20 +16,25 @@ require 'line/bot'
         Line::Bot::Event::Message
 
 
-      case event.type 
-      when 
+      case event.type when 
         Line::Bot::Event::MessageType::Text
+
     task = event[‘message’][‘text’]
+
     begin
+
       Task.create!(task: task)
 
-      message = {type:'text',text:"タスク『#{task}』を登録しました！"
-    }
-      client.reply_message(event['replyToken'],replyToken'],message)
-    rescue
-      message = {type: 'text,text:"タスク『#{task}』の登録に失敗しました。"
-    } 
+      message = {type:'text',text:"タスク『#{task}』を登録しました！"}
+
       client.reply_message(event['replyToken'],message)
+
+    rescue
+
+      message = {type:'text',text:"タスク『#{task}』を失敗しました。"}
+
+      client.reply_message(event['replyToken'],message)
+
     end
   end
 end
