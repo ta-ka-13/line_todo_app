@@ -32,8 +32,4 @@ class TasksController < ApplicationController
     end
   end
 
-  # private
-  # def task_params
-  #   params.permit(:task)
-  # end
 end
