@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   def index
     # @tasks = Task.all
-    @tasks = "そいや"
+    @tasks = ２
   end
 
   def edit
