@@ -5,19 +5,20 @@
 
 </thead>
 <tbody>
-<% @tasks.each do|task| %>
+<%# <% @tasks.each do|task| %>
+<% @tasks %>
 <tr>
-<%# <td><%=task.task%></td>
+<%# <td><%= task.task </td> %>
 
-<td>
-<%= link_to '編集', "/tasks/#{task.id}/edit" %>
-</td>
+<%# <td>
+<%# <%= link_to '編集', "/tasks/#{task.id}/edit" %>
+<%# </td> %>
 
-<td>
-<%= link_to '削除', "/tasks/#{task.id}", method: :delete %>
-</td>
+<%# <td> %>
+<%# <%= link_to '削除', "/tasks/#{task.id}", method: :delete %>
+<%# </td> %>
 
 </tr>
-<%end%>
+<%# <%end%>
 </tbody>
 </table>
