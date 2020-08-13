@@ -1,26 +1,24 @@
 <table class = "table">
-<thead>
-<tr>
-<th colspan = "3" class = "h4">タスク</th></tr>
+  <thead>
+  <tr>
+    <th colspan = "3" class = "h4">タスク</th></tr>
 
-</thead>
-<tbody>
-<% @tasks.each do |task| %>
-<tr>
+  </thead>
+    <%# <tbody> %>
+    <%# <% @tasks.each do |task| %>
+      <tr>
 
-<td>
-<%= @tasks %>
-</td>
+      <%# <td><%= task.task</td> %>
 
-<td>
-<%= link_to '編集', "/tasks/#{task.id}/edit" %>
-</td>
+    <%# <td> %>
+    <%# <%= link_to '編集', "/tasks/#{task.id}/edit" %>
+    <%# </td> %>
 
-<td>
-<%= link_to '削除', "/tasks/#{task.id}/delete", method: :delete %>
-</td>
+    <%# <td> %>
+    <%# <%= link_to '削除', "/tasks/#{task.id}/delete", method: :delete %>
+    <%# </td> %>
 
-</tr>
-<%end %>
-</tbody>
+      <%# </tr> %>
+    <%# <% end %>
+    </tbody>
 </table>
