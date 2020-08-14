@@ -5,11 +5,12 @@
 
   </thead>
   <tbody>
-  <% @tasks.each do |task| %>
+  <%# <% @tasks.each do |task| %>
+  <%= @tasks.task %>
   <tr>
 
   <td>
-  <%= task.task %>
+  <%# <%= task.task %>
   </td>
 
   <td>
@@ -21,6 +22,6 @@
   </td>
 
   </tr>
-  <% end %>
+  <%# <% end %>
   </tbody>
 </table>
