@@ -5,7 +5,7 @@ require 'line/bot'
     def bot
       body = request.body.read
       signature = request.env['HTTP_X_LINE_SIGNATURE']
-        unless cline.validate_signature(body,signature)
+        unless clinet.validate_signature(body,signature)
       head :bad_request
     end
 
