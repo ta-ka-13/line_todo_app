@@ -5,9 +5,8 @@
 
   </thead>
   <tbody>
-  <% @tasks.each do |task| task.to_s %>
+  <% @tasks.each do |task| %>
   <tr>
-
   <td><%= task.task %></td>
 
   <td>
@@ -17,7 +16,7 @@
   <td>
   <%= link_to '削除', "/tasks/#{task.id}/delete", method: :delete %>
   </td>
-
+  
   </tr>
   <% end %>
   </tbody>
